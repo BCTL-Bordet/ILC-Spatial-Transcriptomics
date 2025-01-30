@@ -61,5 +61,5 @@ If you use this classification and these scripts in your research, please cite o
 ## 📘 Further Information
 This analysis and the identification of ILC TME-based subtypes were conducted by **Matteo Serra** at the **Breast Cancer Translational Research Laboratory (BCTL), Institut Jules Bordet, ULB**, under the supervision of **Christos Sotiriou (MD, PhD)**.
 
-For inquiries, feel free to contact [your_email@example.com].
+For inquiries, feel free to contact matteo95serra@gmail.com.
 
