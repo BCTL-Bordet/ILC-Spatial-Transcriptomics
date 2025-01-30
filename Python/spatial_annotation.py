@@ -9,16 +9,16 @@ from PIL import Image
 Image.MAX_IMAGE_PIXELS = None
 
 # Define sample name
-sample = "ST159"
+sample = "ST41"
 
-# Define file paths
-base_path = "/Users/matteoserra/Documents/Data/ST_ductals/spaceranger/"
-image_path = f"{base_path}{sample}/outs/spatial/tissue_hires_image.png"
-mask_path = f"/Users/matteoserra/Documents/Data/ST_ductals/ductals_annotated_complete/{sample}.png"
-positions_path = f"{base_path}{sample}/outs/spatial/tissue_positions_list.csv"
-scalefactors_path = f"{base_path}{sample}/outs/spatial/scalefactors_json.json"
-out_path = f"{base_path}{sample}/outs/spatial/tissue_positions_list_annotation.csv"
-out_adjusted_path = f"/Users/matteoserra/Documents/Data/ST_ductals/percentages_tissue/percentages_tissue{sample}_percentages.csv"
+# Define file paths. All inpute files are present on Zenodo repository ("spacerange" outputs, link to Zenodo in README file)
+# Define file names (relative paths for portability)
+image_file = "tissue_hires_image.png"
+mask_file = f"{sample}.png"
+positions_file = "tissue_positions_list.csv"
+scalefactors_file = "scalefactors_json.json"
+out_file = "tissue_positions_list_annotation.csv"
+out_adjusted_file = f"percentages_tissue_{sample}_percentages.csv"
 
 # Define color mapping (RGB -> tissue class)
 color_map = {
@@ -106,7 +106,7 @@ for j in range(len(colors)):
 
 df_total = pd.DataFrame([color_counts_total]).rename(columns=color_map)
 
-# Remove artefacts and normalize
+# Remove artefacts and normalize, and write the results
 subtract = df_total.loc[0, ['Artefact', 'Hole', 'Out']].sum()
 df_clean = df_total.drop(columns=['Artefact', 'Hole', 'Out']) / (1 - subtract)
 df_clean = df_clean.transpose()
