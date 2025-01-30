@@ -10,15 +10,15 @@ The repository is organized into the following folders:
 
 ## 📁 Folder Structure
 
+### **Python**  
+Contains Python scripts for:
+- Transferring morphological annotations from the annotated H&E slide to the ST spot level.
+
 ### **R**  
 Contains R scripts for:
 - Pre-processing and normalization of ST data.
 - Co-occurrence analysis using morphological data (from annotation) at the ST spot level.
 - Identification of ILC tumor microenvironment (TME)-based subtypes from RNA-seq data.
-
-### **Python**  
-Contains Python scripts for:
-- Transferring morphological annotations from the annotated H&E slide to the ST spot level.
 
 ### **input_data**  
 Contains:
