@@ -45,7 +45,7 @@ The scripts in this repository have been tested using the following software ver
 |---------|-----------------------------|----------------|
 | **NSE** | Normal/Stroma-Enriched      | `#F57C00`      |
 | **P**   | Proliferative               | `#2E7D32`      |
-| **M**   | Metabolic                   | `#1E88E5`      |
+| **ARE** | Androgen Receptor-Enriched  | `#1E88E5`      |
 | **MIE** | Metabolic/Immune-Enriched   | `#8E24AA`      |
 
 ---
