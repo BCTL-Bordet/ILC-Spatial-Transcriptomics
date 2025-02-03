@@ -137,7 +137,7 @@ compute_molecular_subtypes <- function(expression_data, signature_file) {
   signature_scores_df <- as.data.frame(signature_scores)
   
   # Define molecular subtypes to normalize
-  subtypes <- c("NSE", "P", "M", "MIE")
+  subtypes <- c("NSE", "P", "ARE", "MIE")
   
   # Normalize signature scores using rescale function
   normalized_scores <- as.data.frame(
