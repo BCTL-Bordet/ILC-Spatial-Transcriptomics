@@ -28,7 +28,7 @@ Contains:
 
 ## 📊 Data Availability
 All other data required to replicate the analyses and use these scripts can be accessed on **Zenodo**:  
-[Zenodo Link](#)
+https://zenodo.org/records/14779748
 
 ---
 
