@@ -151,7 +151,7 @@ compute_molecular_subtypes <- function(expression_data, signature_file) {
 }
 
 #### Example Usage ####
-# expression_data <- readRDS("expression_lobular.RDS")
-# signature_file <- readRDS("signatures_subtypes.RDS")
+# expression_data <- readRDS("expression_lobular.RDS") # file present in GitHub folder input_data
+# signature_file <- readRDS("signatures_subtypes.RDS") # file present in GitHub folder input_data
 # subtypes_result <- compute_molecular_subtypes(expression_data, signature_file)
 # write.csv(subtypes_result, "molecular_subtypes.csv")
