@@ -22,7 +22,7 @@ Contains R scripts for:
 
 ### **input_data**  
 Contains:
-- TME-based subtype-related gene signatures used for RNA-seq data classification.
+- TME-based subtype-related gene signatures used for RNA-seq data classification and a subset of the dataset to allow users to directly test and explore the classifier functionality.
 
 ---
 
